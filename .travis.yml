@@ -1,0 +1,35 @@
+language: node_js
+
+os:
+  - osx
+
+node_js:
+  - "6"
+
+branches:
+  only:
+    - master
+
+cache:
+  directories:
+    - node_modules
+
+install:
+  - npm install
+
+script:
+  - npm run build
+
+after_script:
+  - cd build
+  - git init
+  - git config --global user.name 'xLsDg'
+  - git config --global user.email 'xlsdg@qq.com'
+  - git add .
+  - git commit -m "Update demo"
+  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:gh-pages
+
+env:
+  global:
+    - GH_REF: github.com/xlsdg/react-highcharts-v5-demo.git
+    - secure: "PWTggvy7LWG7l0pCE3qX3eVSpHZWYnpy6ODTEzSmhJwlFk682byGdWJpVtIyA/WYbBf4Ae5Ir5R8CczCdWp8uqphKeLgG80CTLravkbKJ3F4SWBDm8ZsBwrwRv9iRbY/Jk9MBKQt0J+Tmsa+x1ytoVxfUrY2Kz52IjC4XLNVpLGw2q/MX915fNf4LcQFpMxUshVQAeDTHl/jFSAMRE7eu92Qwn/nB17O1O/D1WqgB0v/lB1LPKM/qo41fAUMfMyP8ddSl54S4/zMNTYC0AxjRnzn+LkXja9x1qhxLCncBfReg2ApfQ8AnvDtBq/w9P8vUH63bbUS3iFr7EPbRlze+Shr0LQ1xRBOTn39G/xc1DAYtRmIplMYUHgkjGDoT/bkiUUdxodluGeqQ1NyTo+HpB8bwaf/+p8ZjF8DmlHJGaKcHyHdaBdWRtkhsawsWq85bSx7BNMUo4KPM8ccNEildZVKyDJh6TKgDx6zVsWjAnDYDR9RLkKkTHuaBUVj3Eam8SR8vNEE1Z0HKWhHMi9uybMJTwbBZg9W8+pc/XM9nmiR7T+/QIs2FPHmaUFX1AAdrJaTo34VQEFhzBXh6IEDnNJ40GAgzWaQ46ftP/AkOinubs56iUFIMZjxK/cHwjqAoJChjryu3adHvGcK+0j852a7u2Is0uxSP4emk0mZpro="

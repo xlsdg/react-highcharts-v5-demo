@@ -1965,7 +1965,7 @@ dotenv-expand@4.0.1:
   version "4.0.1"
   resolved "https://registry.npmjs.org/dotenv-expand/-/dotenv-expand-4.0.1.tgz#68fddc1561814e0a10964111057ff138ced7d7a8"
 
-dotenv@4.0.0:
+dotenv@4.0.0, dotenv@^4.0.0:
   version "4.0.0"
   resolved "https://registry.npmjs.org/dotenv/-/dotenv-4.0.0.tgz#864ef1379aced55ce6f95debecdce179f7a0cd1d"
 
@@ -5128,6 +5128,13 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.1.7:
     ini "~1.3.0"
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
+
+react-app-rewired@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.npmjs.org/react-app-rewired/-/react-app-rewired-1.4.0.tgz#58186dde172b06d5933fcb39268feb8f3f8bcc58"
+  dependencies:
+    cross-spawn "^5.1.0"
+    dotenv "^4.0.0"
 
 react-dev-utils@^5.0.0:
   version "5.0.0"
