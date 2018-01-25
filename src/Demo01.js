@@ -55,7 +55,7 @@ class Demo01 extends React.Component {
   // componentWillUnmount() {
   // }
 
-  onReady = (instance, echarts) => {
+  onLoad = (instance, echarts) => {
     // const that = this;
     // const {
     // } = that.state;
@@ -120,7 +120,7 @@ class Demo01 extends React.Component {
             resizable
             loading={loading}
             options={options}
-            onReady={that.onReady}
+            onLoad={that.onLoad}
             onResize={that.onResize}
           />
         </div>
