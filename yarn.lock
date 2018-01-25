@@ -5170,9 +5170,9 @@ react-error-overlay@^4.0.0:
   version "4.0.0"
   resolved "https://registry.npmjs.org/react-error-overlay/-/react-error-overlay-4.0.0.tgz#d198408a85b4070937a98667f500c832f86bd5d4"
 
-react-highcharts-v5@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.npmjs.org/react-highcharts-v5/-/react-highcharts-v5-1.0.3.tgz#27472aa95f0af98323746b0145428bfb40558c33"
+react-highcharts-v5@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.npmjs.org/react-highcharts-v5/-/react-highcharts-v5-1.0.4.tgz#e6940f2aab988dd18b01194fcda4cc4362b9e1e7"
   dependencies:
     element-resize-detector latest
     lodash latest
